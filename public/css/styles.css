@@ -1,0 +1,30 @@
+#container {
+  overflow: hidden;
+}
+
+#userBox {
+  float:left;
+  background-color: #9B9696;
+  border:5px solid;
+  border-color: #2B3F6B;
+}
+
+#chatBox {
+  float:left;
+  background-color: #9B9696;
+  border:5px solid;
+  border-color: #2B3F6B;
+}
+
+#chat {
+  width: 25em;
+  height: 30em;
+  background-color: #9B9696;
+  border-bottom: 2px solid;
+  border-color: #242020;
+  overflow: auto;
+}
+
+body {
+  background-color: #242020;
+}

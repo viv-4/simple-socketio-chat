@@ -1,0 +1,22 @@
+{
+  "name": "socketio-express-chat",
+  "version": "1.0.0",
+  "description": "Simple Node.js chat using Socket.IO and Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qk4",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "node",
+    "express",
+    "socketio",
+    "chat"
+  ]
+}

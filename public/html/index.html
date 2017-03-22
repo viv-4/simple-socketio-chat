@@ -1,0 +1,31 @@
+<html>
+  <head>
+              
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type='text/javascript' src='js/scripts.js'></script>
+    <link rel='stylesheet', href='css/styles.css', type='text/css', media='all'></link>
+      
+  </head>
+  
+  <body>
+
+    <div id='container'>
+
+      <div id='chatBox'>
+        <!--<textarea id='chat' rows='20' cols='40'></textarea>-->
+        <div id='chat'></div>
+        <br>
+        <input id="msg-input" name="msg-input" type="text" size="30" />
+        <p>Press enter to submit your message</p>
+      </div>
+
+      <div id='userBox'>
+        <b>USERS</b>
+        <div id="users"></div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
