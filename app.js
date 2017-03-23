@@ -6,7 +6,7 @@ var express = require('express')
   , path = require('path')
   
 // Start server
-server.listen(9999);
+server.listen(3000);
 
 // Set up 'public' folder 
 app.use(express.static(path.join(__dirname, 'public')))
