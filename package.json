@@ -4,7 +4,8 @@
   "description": "Simple Node.js chat using Socket.IO and Express",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "qk4",
   "license": "ISC",
