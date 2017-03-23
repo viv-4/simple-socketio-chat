@@ -12,5 +12,5 @@ node app.js
 
 * Point browser to
 ```
-localhost:9999
+localhost:3000
 ```
