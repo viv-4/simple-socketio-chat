@@ -1,27 +1,52 @@
 <html>
   <head>
+
+    <title> Simple Socket.io Chat </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script type='text/javascript' src='js/scripts.js'></script>
-    <link rel='stylesheet', href='css/styles.css', type='text/css', media='all'></link>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet', href='css/styles.css', type='text/css', media='all'>
       
   </head>
   
   <body>
 
-    <div id='container'>
+    <div id='container' class='container-fluid'>
 
-      <div id='chatBox'>
-        <!--<textarea id='chat' rows='20' cols='40'></textarea>-->
-        <div id='chat'></div>
-        <br>
-        <input id="msg-input" name="msg-input" type="text" size="30" />
-        <p>Press enter to submit your message</p>
-      </div>
+      <div id='chat-panel' class='panel panel-primary'>
 
-      <div id='userBox'>
-        <b>USERS</b>
-        <div id="users"></div>
+        <div class='panel-heading'>
+          <h3> Chat! </h3>
+        </div>
+
+        <div class='panel-body'>
+          <div class='container-fluid'>
+            <div id='chatBox' class='row'>
+              <div id='chat' class='col-xs-9'></div>
+              <div id='userBox' class='col-xs-3'>
+                <b>USERS</b>
+                <div id="users"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='panel-footer'>
+          <div class='input-group input-group-sm'>
+            <input id='msg-input' class='form-control' type='text' placeholder='Name'></input>
+            <span class='input-group-btn'>
+              <button class='btn btn-default'>Enter</button>
+            </span>
+          </div>
+        </div>
+
       </div>
 
     </div>

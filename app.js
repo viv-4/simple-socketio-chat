@@ -23,7 +23,6 @@ var users = [];
 io.sockets.on('connection', function (socket) {
   // Set user name
   socket.on('setUserName', function (userName) {
-    // TODO: Guest += 1
 
     if (userName === null || userName === ''){
       userName = 'Guest'
@@ -31,7 +30,7 @@ io.sockets.on('connection', function (socket) {
 
     socket.userName =  userName
 
-    var connected_msg = '+++' + userName + ' has connected.+++';
+    var connected_msg = '+ ' + userName + ' connected +';
     console.log(connected_msg);
     io.sockets.emit('broadcast-msg', connected_msg);
     users.push(userName); //add to array
@@ -52,7 +51,7 @@ io.sockets.on('connection', function (socket) {
       users.splice(pos, 1);
     };
     io.sockets.emit('updateUsers', users);	// update list
-    var dcMsg = '+++' + socket.userName + ' has disconnected.+++';
+    var dcMsg = '- ' + socket.userName + ' disconnected -';
     io.sockets.emit('broadcast-msg',dcMsg);
     console.log(dcMsg)
   });
